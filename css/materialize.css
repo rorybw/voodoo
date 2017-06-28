@@ -4428,6 +4428,16 @@ nav .input-field label.active i {
   font-weight: 700;
 }
 
+@font-face {
+    font-family: "Dirty-Headline";
+    src:url('../fonts/dirtyheadline/Dirty-Headline.ttf.woff') format('woff'),
+        url('../fonts/dirtyheadline/Dirty-Headline.ttf.svg#Dirty-Headline') format('svg'),
+        url('../fonts/dirtyheadline/Dirty-Headline.ttf.eot'),
+        url('../fonts/dirtyheadline/Dirty-Headline.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
