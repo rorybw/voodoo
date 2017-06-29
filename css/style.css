@@ -50,4 +50,4 @@ top:500px; /* your iframe height */
 margin-top:-500px; /* your iframe height */
 }
 
-iframe, object, embed{max-width: 100%;}
+iframe, object, embed .overlay {max-width: 100%;}
