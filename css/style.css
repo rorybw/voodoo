@@ -49,3 +49,5 @@ height:500px; /* your iframe height */
 top:500px; /* your iframe height */
 margin-top:-500px; /* your iframe height */
 }
+
+iframe, object, embed{max-width: 100%;}
