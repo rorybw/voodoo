@@ -75,6 +75,21 @@ $('a').click(function() {
     return false;
 });
 
+$(document).ready(function() {
+              var feed = new Instafeed({
+                clientId: "a45904c1193e48069e7630924de05788",
+                target: "instafeed",
+                get: "user",
+                userId: '5555599163',
+                accessToken: "5555599163.1677ed0.0f506092498d433294b47c52cbd2409e",
+                limit: 8,
+                resolution: "low_resolution",
+                template: '<a href="{{link}}" class="instagram-image" target="_blank"><img src="{{image}}"/></a>'
+              });
+
+              feed.run();
+          });
+
 /*$(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
