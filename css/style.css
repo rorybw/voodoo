@@ -52,3 +52,10 @@ margin-top:-500px; /* your iframe height */
 
 iframe, object, embed {max-width: 100%;}
 
+
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000000;
+   }
+
+
