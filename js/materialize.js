@@ -2176,9 +2176,9 @@ if (jQuery) {
         allowEvent: function(e) {
             var allow = true;
 
-            if (e.type === 'touchstart') {
+            if (e.type === 'mousedown') {
                 TouchHandler.touches += 1; //push
-            } else if (e.type === 'touchend' || e.type === 'touchcancel') {
+            } else if (e.type === 'mousedown' || e.type === 'mousedown') {
                 setTimeout(function() {
                     if (TouchHandler.touches > 0) {
                         TouchHandler.touches -= 1; //pop after 500ms
