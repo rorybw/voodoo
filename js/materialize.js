@@ -4003,7 +4003,7 @@ if (jQuery) {
         $this.hammer({
             prevent_default: false
         }).bind('pan', function(e) {
-          if (e.gesture.pointerType === "touch") {
+          if (e.gesture.pointerType === "") {
 
             // reset interval
             clearInterval($interval);
@@ -4051,7 +4051,7 @@ if (jQuery) {
           }
 
         }).bind('panend', function(e) {
-          if (e.gesture.pointerType === "touch") {
+          if (e.gesture.pointerType === "") {
 
             $curr_slide = $slider.find('.active');
             panning = false;
@@ -4919,7 +4919,7 @@ if (jQuery) {
       $(this).hammer({
         prevent_default: false
       }).bind('pan', function(e) {
-        if (e.gesture.pointerType === "touch") {
+        if (e.gesture.pointerType === "") {
           var $this = $(this);
           var direction = e.gesture.direction;
           var x = e.gesture.deltaX;
@@ -4945,7 +4945,7 @@ if (jQuery) {
           swipeLeft = false;
         }
 
-        if (e.gesture.pointerType === "touch") {
+        if (e.gesture.pointerType === "") {
           var $this = $(this);
           if (swipeLeft || swipeRight) {
             var fullWidth;
